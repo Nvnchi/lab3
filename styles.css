@@ -1,0 +1,14 @@
+#ad {
+    width: 336px;
+    height: 280px;
+    background-color: #eeeeee;  
+    background-image: unset;
+}
+
+body {
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
