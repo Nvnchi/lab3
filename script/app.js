@@ -18,17 +18,17 @@ class App {
     getWeather() {
         // check if cached data exists and is less than one hour old
        let cachedData = localStorage.getItem('weatherData');
-       //if (cachedData) {
-       //     let { timestamp, data } = JSON.parse(cachedData);
-       //     let currentTime = new Date().getTime();
-       //     let oneHour = 60 * 60 * 1000; //one hour in milliseconds
-//
-       //     if (currentTime - timestamp < oneHour) {
-       //         // use the cached data
-       //         this.updateWeather(data);
-       //         return;
-       //     }
-       // }
+        if (cachedData) {
+             let { timestamp, data } = JSON.parse(cachedData);
+             let currentTime = new Date().getTime();
+             let oneHour = 60 * 60 * 1000; //one hour in milliseconds
+        
+             if (currentTime - timestamp < oneHour) {
+                 // use the cached data
+                 this.updateWeather(data);
+                 
+             }
+         }
 
         let url = `http://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lng}&APPID=033e06e2566388f7d4bf9d7c53a11e33&units=metric;`
         fetch(url).then(response => {
