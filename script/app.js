@@ -25,7 +25,9 @@ class App {
         
              if (currentTime - timestamp < oneHour) {
                  // use the cached data
-                 this.updateWeather(data);
+                this.updateWeather(data);
+                this.displayCatImage(data.weather[0].main);
+                return;
                  
              }
          }

@@ -3,6 +3,8 @@
     height: 280px;
     background-color: #eeeeee;  
     background-image: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body {
