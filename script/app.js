@@ -59,7 +59,7 @@ class App {
         document.querySelector('#weather').innerHTML = data.weather[0].main;
     }
 
-    async displayCatImage(weatherCondition) {
+    async displayCatImage() {
         let adElement = document.querySelector('#ad');
         let imageUrl;
 
