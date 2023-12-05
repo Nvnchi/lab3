@@ -47,7 +47,7 @@ class App {
             //update the UI with new data
             this.updateWeather(data);
 
-            // display cat or dog image on weather
+            // display cat image on weather
             this.displayCatImage(data.weather[0].main);
 
         }).catch(err => {
@@ -56,7 +56,9 @@ class App {
     }
 
     updateWeather(data) {
-        document.querySelector('#weather').innerHTML = data.weather[0].main;
+        const temperature = data.main.temp;
+        const weatherDescription = data.weather[0].description;
+        document.querySelector('#weather').innerHTML = `The temperature is ${temperature}°C, and the weather is ${weatherDescription}.`;
     }
 
     async displayCatImage() {

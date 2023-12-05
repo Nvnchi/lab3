@@ -3,7 +3,8 @@
     height: 280px;
     background-color: #eeeeee;  
     background-image: unset;
-    background-size: cover;
+    background-size: 45%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -13,4 +14,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #0a0a0a;
+    margin-bottom: 1rem;
+}
+
+#weather {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    color: #0a0a0a;
+    margin-top: 190px;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
