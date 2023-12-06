@@ -32,7 +32,7 @@ class App {
              }
          }
 
-        let url = `http://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lng}&APPID=033e06e2566388f7d4bf9d7c53a11e33&units=metric`
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lng}&APPID=033e06e2566388f7d4bf9d7c53a11e33&units=metric`
         fetch(url).then(response => {
             return response.json();
         }).then(data => {
